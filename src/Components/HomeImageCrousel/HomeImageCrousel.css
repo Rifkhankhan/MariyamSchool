@@ -1,0 +1,16 @@
+.slick-slider {
+    height:32rem;
+
+
+}
+
+.slick-track{
+    height:32rem;
+}
+  .slick-slider .slick-dots ul{
+    display: none !important;
+}
+
+.slick-slider button{
+    display: none !important;
+}

@@ -1,0 +1,52 @@
+.admin-dashboard-card-container {
+    width:99%;
+    height: 7vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+ }
+
+ .admin-dashboard-card {
+    min-width: calc(100%/4 - 5px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+    display: grid;
+    grid-template-columns: 30% 70%;
+ }
+ .admin-dashboard-card div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.admin-dashboard-card1 {
+   background-color: yellow !important;
+   color: black;
+}
+.admin-dashboard-card2 {
+   background-color: green !important;
+   color: white;
+}
+
+.admin-dashboard-card3 {
+   background-color: red !important;
+   color: white;
+}
+
+.admin-dashboard-card4 {
+   background-color: blue !important;
+   color: white;
+}
+.admin-dashboard-card .MuiSvgIcon-root{
+   width: 100%;
+   height: 100%;
+}
+ .admin-dashboard-card img{
+    width: 100%;
+    object-fit: cover !important;
+    background-position: center;
+}

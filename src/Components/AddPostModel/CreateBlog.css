@@ -1,0 +1,240 @@
+.modal-style {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(13, 1, 24, 0.707);
+  margin: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+    justify-content: center;
+    background: #FFFFFF;
+    color: #000000;
+    position: absolute;
+    z-index: 100;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.header-modal {
+    width: 100% !important;
+    background: linear-gradient(to-right,red,green,blue,yellow,blue,green,red);
+    background-color: red;
+    color: white;
+}
+
+.header-model-header{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    height: auto;
+    padding-inline: .5rem;
+    
+}
+.header-model-header .header-model-header-title{
+    text-align: center;
+}
+.header-model-header .header-model-header-close-btn{
+    margin: auto !important;
+    background-color: white;
+    color: black;
+    border-radius: 50% !important;
+    transition: all 0.5s;
+}
+.header-model-header .header-model-header-close-btn:hover{
+
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.header-model-header .header-model-header-close-btn h3{
+    margin: auto !important;
+    text-align: center;
+    color: red;
+    padding: 2px;
+    padding-inline: 8px;
+}
+
+.background .addpostModel-section{
+    width: 100%;
+
+}
+.background .addpostModel-section .addpostModel-section-group{
+    display: grid;
+    grid-template-columns:10% 30% 50% 10%;
+    width: 100%;
+    margin: auto;
+}
+
+.background .addpostModel-section .addpostModel-section-group img{
+    height: 30vh;
+    width: 100%;
+}
+.background .addpostModel-section .addpostModel-section-group .text-field {
+
+    font-size: 17px;
+    width: 100% !important; 
+    margin: auto !important;
+    text-align: center;
+    padding: .5rem;
+    background-color: rgba(10, 207, 207, 0.512);
+
+}
+.background .addpostModel-section .addpostModel-section-group input {
+
+    outline: none;
+    border: none;
+
+}
+.background .buy-button{
+    float: right;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.background .buy-button button{
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 20px;
+}
+.background .buy-button button:hover{
+   cursor: pointer;
+   background-color: red;
+}
+.profile-image-post {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.dropdown-style {
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.dropdown-style:hover {
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+
+
+.display-div {
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+.previewImage {
+    position: relative;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.post-button {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.post-button-center {
+    padding: 5px;
+    width: 100%;
+    border-radius:10px;
+}
+
+@media screen and (max-width: 600px) {
+  
+
+    .background {
+
+
+
+        justify-content: center;
+        background: #FFFFFF;
+        color: #000000;
+        position: absolute;
+        z-index: 100;
+        border-radius: 5px;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .cancel_button2 {
+        float: right;
+        width:2.2rem;
+        height: 2.2rem;
+        background: var(--red);
+        margin-right: 0px !important;
+        border-radius: 50%;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .text-field {
+        background-color: var(--inputColor);
+        border-radius: 10px;
+        padding: 10px 60px 10px 10px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: 0px !important;
+        font-size: 17px;
+        border: none;
+        outline: none;
+    }
+
+    .dropdown-style {
+        border: 1px solid var(--red);
+        color: var(--red);
+        width: 180px !important;
+    }
+
+    .addpostModel-section-group{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .addpostModel-section-selecttag{
+        margin-top: .5rem;
+    }
+}
+
+.addpostModel-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+

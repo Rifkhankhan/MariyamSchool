@@ -1,0 +1,212 @@
+ .div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 100%;
+    
+}
+ .div p{
+    font-size: 20px;
+    color: white;
+}
+ .div div{
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+ .div img{
+    width: 100px;
+    margin: 0.5rem;
+}
+ .div span{
+    font-size: 30px;
+    margin: 0.5rem;
+
+}
+
+
+.div{
+    height: 37vh;
+    background-color: rgba(27, 31, 53, 0.977);
+}
+
+.div:hover{
+    animation:.5s infinite borderanimation;
+}
+
+@keyframes borderanimation {
+    0% {
+            border-top: 3px solid yellow;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+
+    }
+
+    25% {
+        
+        border-top: 0px;
+        border-right: 3px solid yellow;
+        border-bottom: 0px;
+        border-left: 0px;
+
+        
+       
+    }
+
+    50% {
+       
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 3px solid yellow;
+        border-left: 0px;
+        
+     
+    }
+    75% {
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-left: 3px solid yellow;
+    }
+    100% {
+        border-top: 3px solid yellow;
+}
+}
+
+
+@media screen and (max-width:900px) {
+    .div{
+        height: 30vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 80px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 20px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 15px !important;
+        color: white;
+    }
+ }
+
+ @media screen and (max-width:750px) {
+    .div{
+        height: 25vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 50px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 15px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 10px !important;
+        color: white;
+    }
+ }
+
+ @media screen and (max-width:600px) {
+    .div{
+        height: 15vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 35px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 15px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 8px !important;
+        color: white;
+    }
+ }
+
+ @media screen and (max-width:500px) {
+    .div{
+        height: 15vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 35px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 15px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 8px !important;
+        color: white;
+    }
+ }
+
+ @media screen and (max-width:400px) {
+    .div{
+        height: 12vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 25px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 8px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 7px !important;
+        color: white;
+    }
+ }
+
+ @media screen and (max-width:350px) {
+    .div{
+        height: 10vh;
+        background-color: rgba(27, 31, 53, 0.977);
+    }
+    .div img{
+        width: 20px !important;
+        margin: 0.5rem;
+    }
+
+    .div span{
+        font-size: 5px !important;
+        margin: 0.5rem;
+    
+    }
+
+    .div p{
+        font-size: 5px !important;
+        color: white;
+    }
+ }

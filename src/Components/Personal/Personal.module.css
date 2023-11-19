@@ -1,0 +1,107 @@
+.container{
+    display: block;
+    width: 90%;
+    margin-inline: auto;
+}
+.container hr{
+   height: 3px;
+   background-color: black;
+}
+.propic{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-block: 1rem;
+}
+
+.propic:hover{
+    border: 1px solid yellow;
+    object-fit: cover;  
+    cursor: pointer;
+
+}
+
+.personlDetailsContainer{
+    width: 100%;
+}
+
+.personlDetailsContainer h1{
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+.personalDatas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto !important;
+    justify-content: center;
+}
+
+.personalDatas form{
+    display: grid;
+   grid-template-columns: repeat(2,minmax(0,1fr));
+    width: 100%;
+}
+.formGroup{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-block: .5rem;
+    /* text-align: left; */
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0%;
+}
+
+.formGroup label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.formGroup input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: none;
+    padding-inline: 5px;
+    padding-block: 3px;
+    color: rgb(155, 155, 23);
+    width: auto;
+}
+
+.formGroup button{
+    border: none;
+    display: block;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 5px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: darkblue;  
+    transition: all 0.1s ease-in-out;  
+}
+.formGroup button:hover{
+   background-color: transparent;
+   border: 1px solid darkblue;
+   color: darkblue;
+   cursor: pointer;
+}
+.formGroup button:disabled{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    cursor: default;
+ }
+@media screen and (max-width:760px) {
+    .personalDatas form{
+        display: grid;
+       grid-template-columns: repeat(1,minmax(0,1fr));
+        width: 100%;
+    }
+}

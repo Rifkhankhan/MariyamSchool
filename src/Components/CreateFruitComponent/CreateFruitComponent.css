@@ -1,0 +1,253 @@
+.CreateFruitComponent
+{
+  
+    background-image: url('./../../images/blue-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.577) !important;
+    background-blend-mode: darken;
+
+}
+
+
+.CreateFruitComponent  
+{
+   display: flex;
+   padding: 1rem;
+   flex-direction: column;
+
+}
+
+.CreateFruitComponent  
+ .CreateFruitComponent-form
+{
+   margin-inline: auto;
+   display: grid;
+   grid-template-columns: repeat(1,minmax(0,1fr));
+   width: 70%;
+}
+
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group
+{
+   display: grid;
+   grid-template-columns:  20% 70%;
+   margin-top: 1rem;
+   column-gap: 0px !important;
+}
+
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group label
+{
+   font-size: 20px;
+
+   color: white;
+   text-align: left;
+}
+
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group input
+{
+   outline: none;
+   padding: 1rem;
+   border-radius: 5px;
+   border: 2px solid rgba(173, 216, 230, 0.503);
+   background-color: transparent;
+   color: white;
+   font-size: 20px;
+}
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group input:hover
+{
+  
+   border: 2px solid yellowgreen;
+   cursor: pointer;
+   
+}
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group select
+{
+   outline: none;
+   padding: 1rem;
+   border-radius: 5px;
+   border: 2px solid rgba(173, 216, 230, 0.503);
+
+   background-color: transparent;
+   color: white;
+   font-size: 20px;
+
+}
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group select:hover
+{
+   border: 2px solid yellowgreen;
+   cursor: pointer;
+
+}
+.CreateFruitComponent-form .CreateFruitComponent-form-group select option
+{
+   background-color: white;
+   color: black;
+
+
+}
+
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group textarea
+{
+   outline: none;
+   padding: 1rem;
+   border-radius: 5px;
+   border: 2px solid rgba(173, 216, 230, 0.503);
+
+   background-color: transparent;
+   color: white;
+   font-size: 20px;
+}
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-group textarea:hover
+{
+   border: 2px solid yellowgreen;
+   cursor: pointer;
+}
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-btn .submit-btn
+{
+  display: block;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width:30%;
+}
+
+.CreateFruitComponent   
+.CreateFruitComponent-form .CreateFruitComponent-form-btn .loading-btn
+{
+  display: block;
+  padding: 0.5rem;
+  padding-inline: 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+
+}
+
+.CreateFruitComponent-image{
+   /* background-image: url('../../../images/Fruits/fruits.jpg'); */
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.CreateFruitComponent-form-btn button:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+}
+
+.validation-message{
+   color: red;
+}
+@media screen and (max-width:1050px) {
+   .CreateFruitComponent  
+   .CreateFruitComponent-form
+   {
+   
+      width: 80%;
+   }
+}
+@media screen and (max-width:800px) {
+      .CreateFruitComponent  
+   .CreateFruitComponent-form
+   {
+   
+      width: 85%;
+   }
+   .CreateFruitComponent   
+   .CreateFruitComponent-form .CreateFruitComponent-form-group
+   {
+      grid-template-columns:  25% 75%;
+      row-gap: 10px !important;
+    
+   }
+   .CreateFruitComponent .CreateFruitComponent-form .CreateFruitComponent-form-group label
+      {
+         font-size: 15px;
+
+         color: white;
+         text-align: left;
+      }
+
+      .CreateFruitComponent .CreateFruitComponent-form .CreateFruitComponent-form-group input
+      {
+         font-size: 15px;
+
+         color: white;
+         text-align: left;
+      }
+      .CreateFruitComponent   
+      .CreateFruitComponent-form .CreateFruitComponent-form-group select
+      {
+         font-size: 15px;
+      
+      }
+      .CreateFruitComponent-form .CreateFruitComponent-form-group select option
+      {
+         font-size: 15px !important;
+      }
+      
+      .CreateFruitComponent   
+      .CreateFruitComponent-form .CreateFruitComponent-form-group textarea
+      {
+         font-size: 15px;
+
+      }
+}
+
+@media screen and (max-width:600px) {
+   .CreateFruitComponent  
+   .CreateFruitComponent-form
+   {
+   
+      width: 90%;
+   }
+
+   .CreateFruitComponent   
+   .CreateFruitComponent-form .CreateFruitComponent-form-group
+   {
+      grid-template-columns:  25% 75%;
+    
+   }
+
+   .CreateFruitComponent   
+      .CreateFruitComponent-form .CreateFruitComponent-form-group select
+      {
+         font-size: 15px;
+         overflow: hidden;
+      
+      }
+      .CreateFruitComponent-form .CreateFruitComponent-form-group select option
+      {
+         font-size: 15px !important;
+         width: fit-content;
+         overflow: hidden;
+      }
+      
+      .CreateFruitComponent   
+      .CreateFruitComponent-form .CreateFruitComponent-form-group textarea
+      {
+         font-size: 15px;
+
+      }
+   
+}

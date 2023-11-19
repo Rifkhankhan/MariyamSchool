@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    min-height: 86.5vh;
+    /* min-height: 200vh; */
+
+    margin-inline: auto;
+    width: 100%;
+    position: relative;
+ }
+
+
+
+.count_section{
+    width: 80%;
+    height: 10rem;
+
+    margin-inline: auto;
+    /* margin-top:-5rem !important; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    column-gap: 0.5rem;
+    z-index: 1;
+    margin-top: -5rem !important;
+}
+
+.count_section .count_div
+{
+    background-color: rgb(1, 1, 33);
+
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.count_div p{
+    font-size: 2.5rem;
+}
+
+.count_div span{
+    font-size: 2rem;
+    animation: count 2s linear;
+}
+
+@keyframes count {
+    from{
+        content: "0";
+    }
+
+    to{
+        content: "100";
+    }
+}
+

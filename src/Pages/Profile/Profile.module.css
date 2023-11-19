@@ -1,0 +1,38 @@
+.profile_container{
+    display: grid;
+    grid-template-columns: 15% auto;
+}
+
+
+
+/* .leftSideBar ul{
+   display: grid;
+   grid-template-columns: repeat(1,minmax(0,1fr));
+   width: 100%;
+} */
+/* .leftSideBar ul{
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+ } */
+
+ /* .leftSideBar ul li{
+   list-style: none;
+   font-size: 20px;
+   font-weight: 500;
+   color: darkblue;
+   text-align: left;
+   padding-inline: 0.5rem;
+ } */
+
+ @media screen and (max-width:1050px) {
+    .profile_container{
+        display: block;
+        width: 100%;
+    }
+
+    .profile_containers.sidebar-show{
+        display: block;
+       
+    }
+ }
