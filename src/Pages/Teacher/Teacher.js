@@ -9,15 +9,8 @@ import HomeImageCrousel from '../../Components/HomeImageCrousel/HomeImageCrousel
 
 function Teacher() {
 	const dispatch = useDispatch()
-	const [query, setQuery] = useState('')
-	const [searchItems, setSearchItems] = useState()
+
 	const [model, setModel] = useState(false)
-	const categories = useSelector(state => state.netflixAuth.category)
-	const items = useSelector(state => state.netflixAuth.items)
-	const authData = useSelector(state => state.netflixAuth.authData)
-	const likeVideos = items?.filter(item =>
-		item.likes.includes(authData?.user?._id)
-	)
 
 	useEffect(() => {
 		console.log('autologin')
@@ -52,14 +45,49 @@ function Teacher() {
 			{/* <Topbar searchHandler={searchHandler} setModel={setModel} /> */}
 			<div className={styles.container}>
 				<HomeImageCrousel />
-				{/* <section className={styles.section_image}></section> */}
-			
+				<section className={styles.teacher_table}>
+					<table>
+						<tr>
+							<th>#</th>
+							<th>Year</th>
+							<th>Teachers</th>
+							<th>Other Staffs</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1998</td>
+							<td>152</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1998</td>
+							<td>152</td>
+							<td>15</td>
+						</tr>
 
-				
-				{/* <VideoComponent type='movie'/> */}
+						<tr>
+							<td>1</td>
+							<td>1998</td>
+							<td>152</td>
+							<td>15</td>
+						</tr>
 
-				{/* {query.length > 0 && <NetFlixSearchComponent items={searchItems}/>} */}
-				{/* {query.length === 0 && categories?.map((item) => (<NetFlixItemCarouselComponent key={item.name} type='movie' name={item.name} category={item.name} items={items}/>))} */}
+						<tr>
+							<td>1</td>
+							<td>1998</td>
+							<td>152</td>
+							<td>15</td>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td>1998</td>
+							<td>152</td>
+							<td>15</td>
+						</tr>
+					</table>
+				</section>
 			</div>
 		</>
 	)

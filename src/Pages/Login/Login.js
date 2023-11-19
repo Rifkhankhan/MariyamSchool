@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Login.module.css'
-import logo from './../../images/profile.png'
+import logo from './../../Images/profile.png'
 import { Link, useNavigate } from 'react-router-dom'
-import google from '../../images/google-plus.png'
-import linkedin from './../../images/linkedin.png'
-import fb from './../../images/facebook.png'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { authActions } from '../../Redux/authSlice'
-import Google from '../../google'
+// import Google from '../../google'
 
-import { logIn, signUp, forgotPassword, googleLogin, googleSignup } from '../../Actions/userAction'
-import { GoogleOAuthProvider } from '@react-oauth/google'
+import { logIn, signUp, forgotPassword, googleLogin, googleSignup } from './../../Actions/userAction'
+// import { GoogleOAuthProvider } from '@react-oauth/google'
 
 function Login() {
 	const [login, setLogin] = useState(true)
@@ -206,11 +204,11 @@ function Login() {
 					</div>
 					<div className={styles.logos}>
 						{/* <img src={google} alt="" onClick={googleLogin} /> */}
-						<GoogleOAuthProvider clientId="302827218911-03vd01vqg3l19b48ge2uus3sh8r792pv.apps.googleusercontent.com">
+						{/* <GoogleOAuthProvider clientId="302827218911-03vd01vqg3l19b48ge2uus3sh8r792pv.apps.googleusercontent.com"> */}
 							<div style={{display:'flex !important',flexDirection:'column !important',marginTop:'-1.5rem'}}>
-								<Google  setCredantial={setCredantial} responseHandler={responseHandler}/>
+								{/* <Google  setCredantial={setCredantial} responseHandler={responseHandler}/> */}
 							</div>
-						</GoogleOAuthProvider>
+						{/* </GoogleOAuthProvider> */}
 					
 						{/* <img src={fb} alt="" />
 						<img src={linkedin} alt="" /> */}

@@ -1,7 +1,5 @@
 import React from 'react'
-import like from './../../images/positive-vote.png'
 import styles from './DashboardTable.module.css'
-import moment from 'moment'
 import {  useNavigate } from 'react-router-dom'
 
 function DashboardTable({blogs,title}) {
@@ -16,7 +14,6 @@ function DashboardTable({blogs,title}) {
           <tr ><td>{title}</td></tr>
 					<tr>
 						<th>#</th>
-						<th>Date</th>
 						<th>Title</th>
 						<th>Image</th>
 						{/* <th>Description</th> */}
@@ -26,7 +23,6 @@ function DashboardTable({blogs,title}) {
 					</tr>
 					{blogs.map( blog => <tr onClick={() => clickHandler(blog._id)}>
 						<td>{blogs.indexOf(blog)+1}</td>
-						<td>{moment(blog?.createdAt).format('MM-DD-YYYY')}</td>
 						<td className={styles.title}>{blog?.title}</td>
 						<td>
 							<img src={blog?.image} alt="image" />

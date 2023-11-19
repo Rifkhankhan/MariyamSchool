@@ -30,6 +30,8 @@ import React, { useEffect } from "react";
 import DisLikeComponents from '../Components/DisLikeComponents/DisLikeComponents';
 import Teachers from '../Components/Teachers/Teachers';
 import Teacher from '../Pages/Teacher/Teacher';
+import StudentsPage from '../Pages/Students/Students';
+import Login from '../Pages/Login/Login';
 
 
 const Routers = (props) => {
@@ -54,11 +56,12 @@ const Routers = (props) => {
 			<Route path="/" element={<Home searchItems={props.searchItems}/>} />
 			<Route path="/home" element={<Home searchItems={props.searchItems}/>} />
 			<Route path="/teachers" element={<Teacher />} />
-			<Route path="/students" element={<Home searchItems={props.searchItems}/>} />
-			<Route path="/netflix" element={<NetflixMovies searchItems={props.searchItems}/>} />
-			<Route path="/netflix/login" element={<NetflixLoginPage />} />
+			<Route path="/students" element={<StudentsPage />} />
+			<Route path="/login" element={<Login />} />
+			
+			{/* <Route path="/netflix/login" element={<NetflixLoginPage />} />
 			<Route path="/netflix/register" element={<NetflixRegisterPage />} />
-			<Route path="/netflix/series" element={<NetflixSeries searchItems={props.searchItems}/>} />
+			<Route path="/netflix/series" element={<NetflixSeries searchItems={props.searchItems}/>} /> */}
 			
 			{isAuthenticated && <Route path="/netflix/profile" element={<NetflixProfile />} > 
 				<Route index element={<Dashboard /> } />

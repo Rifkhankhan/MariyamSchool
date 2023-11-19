@@ -36,6 +36,12 @@
     margin-inline: auto !important;
  
  }
+ .teacher_table .table_container{
+  display: flex;
+  flex-direction: column;
+
+
+}
  .teacher_table table{
     width: 100%;
     height: auto;
@@ -43,6 +49,14 @@
     margin-inline: auto !important;
     background-color: white;
     padding-inline: 2rem;
+ }
+
+ .teacher_table .table_container h1{
+  text-align: left;
+  padding-block: 0.5rem;
+  background-color: white;
+  margin-block: 0.3rem;
+  padding-left: 1rem;
  }
  .teacher_table table tr:first-child{
     color: darkblue;

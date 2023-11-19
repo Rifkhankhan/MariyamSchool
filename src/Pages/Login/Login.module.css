@@ -1,5 +1,5 @@
 .container {
-    background: url('../../images/blue-background.jpg');
+    background: url('./../../Images/homeBack.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;object-fit: cover;

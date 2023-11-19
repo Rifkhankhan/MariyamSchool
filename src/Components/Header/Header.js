@@ -92,7 +92,7 @@ const Header = props => {
 				</Link>
 				
 				<Link to="/news" className="menu">
-					Classes
+					Events
 				</Link>
 				<Link to="/news" className="menu">
 					Activities
