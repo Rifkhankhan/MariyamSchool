@@ -1,13 +1,8 @@
-*{
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
+
 .student-table{
-  width: 100%;
-  margin-inline: 0.5rem;
+  width:98% !important;
+  /* width:100% !important; */
   border-radius:5px;
-  padding: 0% !important;
   margin-bottom: 1rem;
 }
 .student-table tr th{
@@ -15,7 +10,4 @@
 }
 .student-table tr td{
   padding: .5rem;
-}
-.student-table .table-head{
- width: 100%;
 }

@@ -1,18 +1,19 @@
 .netflix-ProfileSidebar{
     flex: 3;
-    /* top: 90px; */
-    min-height:calc(100vh - 50px) ;
-    height: 100%;
+    position: sticky;
+    top: 5rem;
+    height:88.5vh ;
+    /* height: 100%; */
     width: 100%;
     background-color: rgb(1, 1, 33);
     color: white;
-    overflow-y: scroll;
-    position: sticky;
+    overflow-y: auto;
     transition: left 0.3s ease-in-out !important;
 }
 
 ::-webkit-scrollbar {
     width: 1px;
+    height: 5px;
   }
   ::-webkit-scrollbar-track {
     background-color:black;

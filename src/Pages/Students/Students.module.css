@@ -42,6 +42,33 @@
 
 
 }
+.teacher_table .list_container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-inline: auto;
+  background-color: white;
+  text-align: left;
+  margin-inline: auto;
+
+}
+.teacher_table .list_container h1{
+  text-align: left;
+  padding-block: 0.5rem;
+  background-color: white;
+  margin-block: 0.3rem;
+  padding-left: 1rem;
+
+}
+.teacher_table .list_container ol{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  margin-inline: auto;
+}
+.teacher_table .list_container ol li::marker{
+  text-align: center !important;
+}
  .teacher_table table{
     width: 100%;
     height: auto;

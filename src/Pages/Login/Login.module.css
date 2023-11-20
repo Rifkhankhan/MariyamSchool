@@ -3,19 +3,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;object-fit: cover;
-    min-height: 90vh;
+    min-height: 99vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.574) !important;
+    margin-top: -5rem;
+    height: 100%;
+    background-blend-mode: color;
 }
 
 .container .title{
-    color: white;
-    font-size: 35px;
-    font-weight: 400;
+    color:white;
+    font-size: 45px;
+    font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
-    margin-block: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
 }
 
 .container .form_container 
@@ -23,7 +27,7 @@
     width: 20rem;
     height: 30rem;
     background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 5px 5px 0 rgba(3, 16, 15, 0.76);
+    box-shadow: 0 1px 10px 0 rgba(3, 16, 15, 0.76);
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px );
     border-radius: 10px;

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { netflixAuthActions } from '../../Redux/netflixAuthSlice'
 
 import HomeImageCrousel from '../../Components/HomeImageCrousel/HomeImageCrousel'
+import datas from '../../Data/students'
 
 function Students() {
 	const dispatch = useDispatch()
@@ -136,45 +137,15 @@ function Students() {
 						</tr>
 					</table></div>}
 
-					{table1 && table2 && <div className={styles.table_container}>
+					{table1 && table2 && <div className={styles.list_container}>
 						<h1>{`${table1} ${table2}`}</h1>
-
-						<table >
-						<tr>
-							<th>#</th>
-							<th>Batch</th>
-							<th>Girls</th>
-							<th>Boys</th>
-						</tr>
-					
-						<tr onClick={table2ClicHandler}>
-							<td>1</td>
-							<td>O/L</td>
-							<td>152</td>
-							<td>15</td>
-						</tr>
-
-						<tr>
-							<td>1</td>
-							<td>A/L</td>
-							<td>152</td>
-							<td>15</td>
-						</tr>
-
-						<tr>
-							<td>1</td>
-							<td>1998</td>
-							<td>152</td>
-							<td>15</td>
-						</tr>
-
-						<tr>
-							<td>1</td>
-							<td>1998</td>
-							<td>152</td>
-							<td>15</td>
-						</tr>
-					</table>
+						<ol>
+							{datas.map(data => <li key={data.id}>
+								{data.lastName}
+							</li>)}
+							
+						</ol>
+						
 					</div>}
 				
 				</section>

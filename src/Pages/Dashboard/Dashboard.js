@@ -52,7 +52,7 @@ function Dashboard() {
 	return (
 		<>
 				 <div className= "admin-dashboard-page-container">
-					<img src={jfn_logo} alt="" className='jfn_logo'/>
+					{/* <img src={jfn_logo} alt="" className='jfn_logo'/> */}
 					<DashboardCountCard />
 
 					{/* students table */}
@@ -60,7 +60,7 @@ function Dashboard() {
 					<StudentTable backgroundColor='lightblue' color='white' headColor='rgb(4, 4, 52)' />
 					{/* teachers table */}
 					{/* fees table */}
-					<FeesTable backgroundColor='lightblue' color='white' headColor='rgb(4, 4, 52)' />
+					{/* <FeesTable backgroundColor='lightblue' color='white' headColor='rgb(4, 4, 52)' /> */}
 					{/* exam table */}
 
 				
