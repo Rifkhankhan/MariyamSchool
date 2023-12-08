@@ -1,0 +1,154 @@
+.header_nav{
+    display: block;
+    height: 100px;
+    background-color: rgb(28, 6, 75);
+    color: white;
+    font-weight: bolder;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    padding-block: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.header_logo{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: url('./../../Images/logo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.header_logo:hover{
+    border: 1.5px solid yellow;
+    transform: scale(1.1);
+    
+}
+.header_menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: white !important;
+    align-items: center;
+    position: relative;
+    background-color: 'black';
+}
+.header_menus .menu{
+    color: white !important;
+    text-decoration: none;
+    margin-inline: 10px;
+    transition: all 0.5s;
+}
+.header_menus .menu img{
+    width: 35px;
+    margin: auto !important;
+    transition: all 0.5s ease-in-out;
+}
+.header_menus .menu:hover{
+    color: rgb(128, 222, 19) !important;
+   text-decoration: underline;
+}
+
+.profile_btn{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header_menus .menu img:hover{
+   transform: scale(1.1);
+}
+
+
+/* responsive header */
+.header_menus .icon {
+    display: none;
+    font-size: 25px;
+    color: white;
+}
+.responsived_card .arrow{
+  width: 20px;
+  top: -20px;
+  right: 10px;
+  position: absolute;
+}
+.responsived_card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 150px;
+  top: 55px;
+  right: -10px;
+  height: 100px;
+  position: absolute;
+  height: auto;
+  background-color: rgb(28, 6, 75);
+  display: none ;
+  border-radius: 5px;
+}
+
+.responsived_card a{
+  padding: 10px;
+  text-align: left;
+  text-decoration: none !important;
+}
+.responsived_card a:first-child{
+  margin-top: 5px;
+  
+}
+
+
+.responsived_card a:hover:not(:last-child){
+  color: white;
+  background-color:rgba(173, 216, 230, 0.564) !important;
+  
+}
+
+.responsived_card a img{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  
+}
+@media screen and (max-width: 630px) {
+  .header_menus a:not(.responsived_card a) {
+    display: none;
+  }
+    .header_menus a.icon {
+      float: right;
+      display: block !important;
+    }
+    .header-logo{
+      margin-left: 20px;
+    }
+   
+  }
+
+  @media screen and (max-width: 630px) {
+    .header_menus {position: relative;}
+    .header_menus .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .responsived_card.show {
+      display: flex !important;
+
+    }
+   
+  
+  }
+
+  @media screen and (max-width: 750px) {
+    .header_logo{
+      margin-left: 20px;
+    }
+  
+  }
+

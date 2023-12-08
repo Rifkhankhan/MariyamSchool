@@ -1,0 +1,13 @@
+
+.student_table{
+  width:98% !important;
+  /* width:100% !important; */
+  border-radius:5px;
+  margin-bottom: 1rem;
+}
+.student_table tr th{
+  padding: .5rem;
+}
+.student_table tr td{
+  padding: .5rem;
+}

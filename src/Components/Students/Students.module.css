@@ -1,4 +1,4 @@
-.netflix-profile-Content{
+.container{
     flex: 3;
     height: 100%;
     min-height: 87.5vh;
@@ -6,13 +6,13 @@
     width: 100% !important;
     background-color: white;
 }
-.netflix-profile-Content-title{
+.title{
   margin: 1rem;
   color: darkblue;
   display: flex;
   justify-content: space-between;
 }
-.netflix-profile-Content-title .addbtn{
+.title .addbtn{
   margin-top: 1rem;
 
     font-size: 50px;
@@ -22,7 +22,7 @@
     color: white;
   }
 
-  .netflix-profile-Content-title .backbtn{
+  .title .backbtn{
     margin-top: 1rem;
   
       font-size: 50px;
@@ -30,13 +30,13 @@
       transition: all 0.2s;
       color: rgba(7, 17, 128, 0.541);
     }
-.netflix-profile-Content-title .addbtn:hover{
+.title .addbtn:hover{
 cursor: pointer;
 background-color: rgb(10, 10, 10);
 color: rgb(255, 255, 255);
 }
     
-.netflix-profile-Content-container{
+.container-container{
   margin: auto !important;
   width: 100% !important;
   background-color: antiquewhite;
@@ -44,25 +44,38 @@ color: rgb(255, 255, 255);
 }
 
   
-.netflix-profile-Content-table{
+.container-table{
   width: 99% !important;
   margin: auto !important;
 
 }
-.netflix-profile-Content-table .table-head{
+.container-table .table-head{
   background-color: rgb(1, 1, 33);
   color: white;
   padding: 1rem;
 }
 
-.netflix-profile-Content-table .table-head tr th{
-  padding: 1rem;
+.container-table .table-head tr th{
+  padding-inline: 1rem;
+  padding-block: .5rem;
   text-align: center;
 }
 
-.netflix-profile-Content-table .table-body tr:hover{
+.container-table .table-body tr:hover{
 
   background-color: aqua;
   cursor: pointer;
 }
 
+.student_table{
+  width:98% !important;
+  /* width:100% !important; */
+  border-radius:5px;
+  margin-bottom: 1rem;
+}
+.student_table tr th{
+  padding: .5rem;
+}
+.student_table tr td{
+  padding: .5rem;
+}

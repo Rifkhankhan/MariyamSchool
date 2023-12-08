@@ -1,75 +1,109 @@
-import React, { useEffect } from "react";
-import './Teachers.css'
-import {
+import React, { useEffect } from 'react'
+import styles from './Teachers.module.css'
 
-  Add
-} from "@material-ui/icons";
+import { Add } from '@material-ui/icons'
+import Calender from '../Calender'
 
-import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getItems } from "../../Actions/MovieAction";
-import teachers from '../../Data/teachers'
-// id:1,
-// firstName:'Mohammed',
-// lastName:'Rifkhan',
-// grade:12,
-// dob:'1998-04-14',
-// age:20,
-// address:'454,common road palamunai',
-// contactNo:'758524635',
-// image:'',
+import { useNavigate } from 'react-router-dom'
+
+import { useState } from 'react'
+
 const Teachers = () => {
-const navigate = useNavigate()
-const dispatch = useDispatch()
-const items = useSelector(state => state.netflixAuth.items)
-const series = items.filter(item => item.type === 'movie')
-console.log(teachers);
-  const addHandler = (e) => {
-    e.preventDefault()
-    navigate('/netflix/profile/teachers/add')
-  }
-  const LoadDetail = (e) => {
-    console.log(e);
-    navigate(`/netflix/profile/teachers/${e}`)
-  }
+	const [year, setYear] = useState()
 
-  useEffect(() => {
-    dispatch(getItems())
-  },[dispatch])
+	const navigate = useNavigate()
 
+	const years = [2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023]
+	const batch = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'O/L', 'A/L']
+	const teams = ['Discipline', 'Band', 'Scoud', 'Grath']
 
-  return <div className="netflix-profile-Content">
-      <div className="netflix-profile-Content-title">
-          <h2 >Teachers</h2>
-          <Add className="addbtn" onClick={addHandler}/>
-      </div>
-      <div className="netflix-profile-Content-container">
-        <table className="netflix-profile-Content-table" >
-            <thead className="table-head">
-                <tr>
-                  <th>No</th>
-                  <th>Name</th>
-                  <th>Class</th>
-                  <th>Address</th>
-                  <th>Age</th>
-                </tr>
-						</thead>
+	const yearHandler = batch => {
+		setYear(batch)
+		// navigate(`/admin/students/batch`, { state: batch })
+	}
 
-            <tbody className="table-body">
-									{teachers &&
-										teachers.map((item,index) => (
-											<tr key={item.id} onClick={() => LoadDetail(item.id)}>
-												<td>{index+1}</td>
-												<td>{item.firstName} {item.lastName}</td>
-												<td>{item.classes.join(', ')}</td>
-												<td>{item.address}</td>
-												<td>{item.age}</td>
-											</tr>
-										))}
-								</tbody>
-        </table>
-      </div>
-  </div>;
-};
+	const batchHandler = batch => {
+		navigate(`/admin/students/batch`, { state: { year: year, batch: batch } })
+	}
+	return (
+		<div className={styles.rootContainer}>
+			<section className={styles.container}>
+				<h2
+					style={{
+						textAlign: 'left',
+						paddingInline: '1rem',
+						paddingTop: '1rem',
+						paddingBottom: '.5rem',
+						color: ' rgb(28, 6, 75)'
+					}}>
+					Teachers Batch
+				</h2>
+				<div className={styles.innerContainer}>
+					{years.map(year => (
+						<div
+							className={styles.card}
+							onClick={() => {
+								yearHandler(year)
+							}}>
+							<h2>{year}</h2>
+						</div>
+					))}
+				</div>
+			</section>
 
-export default Teachers;
+			{/* attedance */}
+			<section className={styles.attendanceContainer}>
+				<h2
+					style={{
+						textAlign: 'left',
+						paddingInline: '1rem',
+						paddingBottom: '.5rem',
+						color: ' rgb(28, 6, 75)'
+					}}>
+					Attendance
+				</h2>
+				<div className={styles.attendanceInnerContainer}>
+					<div className={styles.attendancePersantage}>
+						<div className={`${styles.attendancePersantageCircle} border:`}>
+							<h2 className={styles.attendancePersantageamount}>
+								<span>75</span>%
+							</h2>
+							<h2 style={{ fontFamily: 'times', color: 'blue' }}>Today</h2>
+						</div>
+					</div>
+					<div className={styles.attendanceCalender}>
+						<Calender />
+					</div>
+				</div>
+			</section>
+
+			{/* teams */}
+
+			<section className={styles.container}>
+				<h2
+					style={{
+						textAlign: 'left',
+						paddingInline: '1rem',
+						paddingTop: '1rem',
+						paddingBottom: '.5rem',
+						color: ' rgb(28, 6, 75)'
+					}}>
+					Teacher Groups
+				</h2>
+				<div className={styles.innerContainer}>
+					{teams.map(year => (
+						<div
+							className={styles.card}
+							onClick={() => {
+								yearHandler(year)
+							}}>
+							<h2>{year}</h2>
+						</div>
+					))}
+				</div>
+			</section>
+		</div>
+	)
+}
+
+export default Teachers

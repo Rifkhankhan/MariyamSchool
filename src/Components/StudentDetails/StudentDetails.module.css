@@ -1,0 +1,177 @@
+
+  /* attendance */
+.container{
+    background-color: lightblue;
+}
+  .attendanceContainer{
+    margin-block: 2rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+  .attendanceInnerContainer{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 7rem;
+
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+.attendancePersantage{
+ flex: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+.attendancePersantageCircle{
+    
+    height: 300px;
+    background-color: rgba(140, 13, 168, 0.616);
+    width: 60%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1.5rem solid black;
+}.attendancePersantageamount{
+    font-size: 4rem;
+    color: yellow;
+}
+  .personImageContainer{
+    flex: 0.4;
+    width: 100%;
+}
+  .personImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
+
+
+  /* class */
+  .classContainer{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .header{
+    padding-inline: 15px;
+    text-align: left;
+  }
+.innerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    font-size: 15px;
+    background-color: blue;
+    margin: 5px;
+    width: 19%;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.box:hover{
+    background-color: transparent;
+
+    border: 2px solid blue;
+    color: blue;
+    cursor: pointer;
+    padding-block: 2px;
+
+}
+
+ /* result */
+ .resultContainer{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .resultbox{
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    font-size: 15px;
+    background-color: rgb(255, 77, 0);
+    margin: 5px;
+    width: 19%;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .resultbox:hover{
+    background-color: transparent;
+
+    border: 2px solid rgb(255, 77, 0);
+    color: rgb(255, 77, 0);
+    cursor: pointer;
+    padding-block: 2px;
+
+}
+  	{/* personal details */}
+
+      .personalDetailsContainer{
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+      }
+      .personalDetailsInnerContainer{
+        background-color: white;
+        border-radius: 5px;
+        margin-inline: 1rem;
+        margin-block: 1rem;
+        width: 80%;
+        height: auto;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+.detailBox{
+    border-radius: 5px;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    background-color: rgba(183, 173, 230, 0.727);
+    width: 19.5%;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.detailBox p:first-child{
+    font-size: 15px;
+
+}
+
+.detailBox p:last-child{
+    font-size: 15px;
+    text-align: left;
+    color: darkblue;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+

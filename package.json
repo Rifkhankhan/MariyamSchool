@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-  
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.10.6",
@@ -18,10 +17,13 @@
     "@tinymce/tinymce-react": "^4.3.0",
     "axios": "^1.1.3",
     "caniuse-lite": "^1.0.30001551",
+    "date-fns": "^2.30.0",
     "headroom.js": "^0.12.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.8.5",
     "react-burger-menu": "^3.0.9",
+    "react-calendar": "^4.6.1",
     "react-dom": "^18.2.0",
     "react-google-login": "^5.2.2",
     "react-loader-spinner": "^5.3.4",
@@ -35,7 +37,6 @@
     "sweetalert": "^2.1.2",
     "timeago.js": "^4.0.2",
     "web-vitals": "^2.1.4"
-    
   },
   "scripts": {
     "start": "react-scripts start",

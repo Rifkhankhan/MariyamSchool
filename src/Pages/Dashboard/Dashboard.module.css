@@ -1,0 +1,59 @@
+
+.admin_dashboard_page_container{
+    display: block;
+  
+    
+    min-height: 100vh;
+
+    width: 99% !important;
+    height: 100% !important;
+    position: relative;
+    flex-direction: column;
+    position: sticky;
+    overflow-y: auto;
+    /* margin-inline: auto; */
+ }
+.admin_dashboard_page_container .jfn_logo{
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+}
+
+
+  /* attendance */
+
+
+  .attendanceInnerContainer{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 7rem;
+    margin-block: 2rem;
+
+    justify-content: space-between;
+  }
+.attendancePersantage{
+ flex: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+.attendancePersantageCircle{
+    
+    height: 300px;
+    background-color: rgba(140, 13, 168, 0.616);
+    width: 60%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1.5rem solid black;
+}.attendancePersantageamount{
+    font-size: 4rem;
+    color: yellow;
+}
+  .attendanceCalender{
+    flex: 0.4;
+    width: 100%;
+    align-self: center;
+  }

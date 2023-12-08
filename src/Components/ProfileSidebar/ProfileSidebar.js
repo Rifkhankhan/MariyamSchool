@@ -36,19 +36,19 @@ const ProfileSidebar = ({show}) => {
             <GroupSharp className="sidebarIcon" />
             <span className="sidebarListItemText">Teachers</span>
           </NavLink>
-          <NavLink to='/admin/series' className="sidebarListItem">
+          <NavLink to='/admin/assignments' className="sidebarListItem">
             <MoveToInbox className="sidebarIcon" />
             <span className="sidebarListItemText">Assignments</span>
           </NavLink>
-          <NavLink to='/admin/users' className="sidebarListItem">
+          <NavLink to='/admin/exams' className="sidebarListItem">
             <Person className="sidebarIcon" />
             <span className="sidebarListItemText">Exams</span>
           </NavLink>
-          <NavLink className="sidebarListItem">
+          <NavLink className="sidebarListItem" to='/admin/results'>
             <Search className="sidebarIcon" />
             <span className="sidebarListItemText">Results</span>
           </NavLink>
-          <NavLink to='/admin/category' className="sidebarListItem">
+          <NavLink to='/admin/events' className="sidebarListItem">
             <Category className="sidebarIcon" />
             <span className="sidebarListItemText">Events</span>
           </NavLink>
@@ -56,7 +56,31 @@ const ProfileSidebar = ({show}) => {
             <VideocamSharp className="sidebarIcon" />
             <span className="sidebarListItemText">Compatition</span>
           </NavLink>
-          <NavLink to='/admin/category' className="sidebarListItem">
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Attendance</span>
+          </NavLink>
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Time table</span>
+          </NavLink>
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Communication</span>
+          </NavLink>
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Event Calender</span>
+          </NavLink>
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Permissions</span>
+          </NavLink>
+          <NavLink to='/admin/attendance' className="sidebarListItem">
+            <VideocamSharp className="sidebarIcon" />
+            <span className="sidebarListItemText">Notifications</span>
+          </NavLink>
+          <NavLink to='/admin/settings' className="sidebarListItem">
             <Settings className="sidebarIcon" />
             <span className="sidebarListItemText">Settings</span>
           </NavLink>

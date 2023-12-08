@@ -1,0 +1,66 @@
+.container{
+   flex: 1;
+   background-color: rgba(33, 122, 122, 0.238);
+   padding: 2rem;
+   flex-direction: column;
+}
+.form{
+   height: auto;
+   display: flex;
+   background-color: rgba(0, 0, 0, 0.137);
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: auto;
+   width: 50%;
+}
+.inputRow {
+   width: 80%;
+   flex-direction: 'row';
+   justify-content: 'space-between';
+   margin: 0.1rem;
+}
+
+.innerContainer {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 8
+}
+ .errorMessageContainer{
+     padding:.6rem;
+     justify-content:center;
+     align-items:center;
+     background-color: red;
+     color: white;
+     width: 80%;
+     border-radius: 5px;
+ }
+ .errorMessage{
+     color:"red";
+     font-size:14;
+ }
+.buttonContainer{
+   padding-inline: 0.5rem;
+   align-items: flex-start;
+   justify-content: flex-start;
+   display: flex;
+
+}
+ .button{
+   background-color: green;
+   padding-inline: 1rem;
+   padding-block: .5rem;
+   border-radius: 5px;
+   border: none;
+   margin: 0.1rem;
+   color: white;
+   font-weight: 500;
+   font-size: 15px;
+ }
+
+ .button:hover{
+   background-color: transparent;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
+ }
